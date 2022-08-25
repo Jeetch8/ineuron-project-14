@@ -101,6 +101,7 @@ nav{
 .lower__part{
     display: flex;
     justify-content: space-between;
+    color: #333333;
 }
 .lower__part img{
     object-fit:contain;
@@ -114,7 +115,7 @@ nav{
 .line{
     height: 400px;
     width: 1px;
-    background-color: black;
+    background-color: #333333;
     position: absolute;
     left: -0.9vw;
     top: 3.5vh;
@@ -122,10 +123,61 @@ nav{
 .illustration{
     position: relative;
 }
-.illustration::before{
-    content: '"';
-    font-size: 4rem;
-    position: absolute;
-    top: -3vh;
-    left: -1vw;
+.illustration svg{
+    width: 40px;
+    color: #333333;
+    fill: #333333;
+    margin-bottom: 10px;
+}
+
+.illustration h2{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.arrow__down{
+    margin-top: 160px;
+}
+.dance__img{
+    width: 530px;
+}
+.lower__part ul li:not(.lower__part ul li:nth-child(2)){
+    color: #828282;
+}
+
+
+@media only screen and (max-width:1620px){
+    nav{
+        display: none;
+    }
+    .right{
+        flex-direction: column;
+        top: 100vh;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .hero__heading h1{
+        font-size: 50px;
+        line-height: normal;
+    }
+    .creativity__lower__text div{
+        font-size: 20px;
+        line-height: normal;
+    }
+    .lower__part{
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .illustration{
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    .arrow__down{
+        display: none;
+    }
+    .left{
+        width: 100%;
+    }
 }
